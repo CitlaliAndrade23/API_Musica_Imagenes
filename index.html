@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Mi API de Música</h1>
+    <p>Álbumes musicales</p>
+
+    <div class="contenedor" id="musica"></div>
+
+    <script>
+        fetch("db.JSON")
+            .then(respuesta => {
+                if (!respuesta.ok) {
+                    throw new Error("No se pudo cargar el JSON");
+                }
+                return respuesta.json();
+            })
+            .then(datos => {
+                const contenedor = document.getElementById("musica");
+
+                datos.Musica.forEach(album => {
+                    contenedor.innerHTML += `
+                        <div class="tarjeta">
+                            <img src="${album.imagen}" alt="${album.album}">
+                            <h3>${album.album}</h3>
+                            <p><strong>Artista:</strong> ${album.artista}</p>
+                            <p><strong>Género:</strong> ${album.genero}</p>
+                        </div>
+                    `;
+                });
+            })
+            .catch(error => {
+                console.error(error);
+                document.getElementById("musica").textContent =
+                    "Error al cargar los álbumes.";
+            });
+    </script>
+
+</body>
+</html>

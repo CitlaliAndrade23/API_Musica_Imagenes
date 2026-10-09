@@ -1,0 +1,75 @@
+
+{
+  "Musica": [
+    {
+      "id": 1,
+      "imagen": "/Musica/Image/1.jpg",
+      "artista": "BTS",
+      "album": "Wings",
+      "genero": "K-pop"
+    },
+    {
+      "id": 2,
+      "imagen": "/Musica/Image/2.jpg",
+      "artista": "BTS",
+      "album": "Map of the Soul: 7",
+      "genero": "K-pop"
+    },
+    {
+      "id": 3,
+      "imagen": "/Musica/Image/3.jpg",
+      "artista": "Taylor Swift",
+      "album": "1989",
+      "genero": "Pop"
+    },
+    {
+      "id": 4,
+      "imagen": "/Musica/Image/4.jpg",
+      "artista": "Taylor Swift",
+      "album": "Folklore",
+      "genero": "Indie folk"
+    },
+    {
+      "id": 5,
+      "imagen": "/Musica/Image/5.jpg",
+      "artista": "Halsey",
+      "album": "Badlands",
+      "genero": "Pop alternativo"
+    },
+    {
+      "id": 6,
+      "imagen": "/Musica/Image/6.jpg",
+      "artista": "Halsey",
+      "album": "Manic",
+      "genero": "Pop"
+    },
+    {
+      "id": 7,
+      "imagen": "/Musica/Image/7.jpg",
+      "artista": "Coldplay",
+      "album": "A Head Full of Dreams",
+      "genero": "Pop rock"
+    },
+    {
+      "id": 8,
+      "imagen": "/Musica/Image/8.jpg",
+      "artista": "Ariana Grande",
+      "album": "Thank U, Next",
+      "genero": "Pop"
+    },
+    {
+      "id": 9,
+      "imagen": "/Musica/Image/9.jpe",
+      "artista": "Selena Gomez",
+      "album": "Revival",
+      "genero": "Pop"
+    },
+    {
+      "id": 10,
+      "imagen": "/Musica/Image/10.jpe",
+      "artista": "Selena Gomez",
+      "album": "Rare",
+      "genero": "Pop"
+    }
+  ]
+}
